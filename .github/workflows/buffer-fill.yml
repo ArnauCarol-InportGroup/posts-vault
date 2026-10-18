@@ -4,6 +4,13 @@ on:
   # Once a week, Monday 06:00 UTC: tops the queue back up to the plan limit.
   schedule:
     - cron: "0 6 * * 1"
+  # Whenever posts are added or edited (Sincronizar posts.bat).
+  # The state file is excluded so the workflow's own commits never retrigger it.
+  push:
+    branches: [main]
+    paths:
+      - "vault/**"
+      - "!vault/state.bin"
   # "Run workflow" button in the Actions tab (also used by Rellenar Buffer.bat).
   workflow_dispatch:
     inputs:
