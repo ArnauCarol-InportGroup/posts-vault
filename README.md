@@ -15,7 +15,7 @@ El contenido de este repositorio está cifrado (AES-256-GCM). Sin la contraseña
 | Qué | Cómo |
 |---|---|
 | Rellenar Buffer ahora | Doble clic en `Rellenar Buffer.bat`, o Actions → *Rellenar Buffer* → *Run workflow* |
-| Automático | Una vez por semana: lunes a las 06:00 UTC |
+| Automático | Una vez por semana (lunes a las 06:00 UTC) y cada vez que cambian posts en `vault/` |
 | Añadir o editar posts | Crea o edita la carpeta en local y haz doble clic en `Sincronizar posts.bat` |
 | Recuperar las carpetas | `python tools/vault.py decrypt` |
 | Ver el contenido y el siguiente post | `python tools/vault.py list` |
