@@ -1,0 +1,2 @@
+vault/*.bin binary
+*.bat text eol=crlf

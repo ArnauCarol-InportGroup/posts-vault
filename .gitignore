@@ -1,0 +1,12 @@
+# Public repo: only the tool and the encrypted vault are tracked.
+# Plaintext post folders and .env never leave this machine.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/tools/
+!/vault/
+!/README.md
+!/requirements.txt
+!/*.bat
+__pycache__/
